@@ -18,7 +18,7 @@
 
         </div>
 
-        <div class="swiper-pagination" style="margin: 30px 0px; position: static"></div>
+        <div class="swiper-pagination 2xl:container 2xl:mx-auto" style="margin: 30px 0px; position: static"></div>
 
     </div>
 
@@ -26,11 +26,13 @@
         <img src="<?php echo get_theme_file_uri()?>/dev/aloes/src/images/dostawa-aloes-sklep-wysylka.png" alt="">
     </div>
 
-    <div class="aloe-products-wrapper">
+    <div class="aloe-products-wrapper 2xl:container 2xl:mx-auto">
+        <h2>Produkty</h2>
+        <div class="aloe-divider"><span></span></div>
         <?php echo do_shortcode('[products limit="21" orderby="date" order="DESC" columns="3"]') ?>
     </div>
 
-    <div class="aloe-posts-wrapper">
+    <div class="aloe-posts-wrapper 2xl:container 2xl:mx-auto">
         <?php 
 
             
@@ -76,7 +78,7 @@
 
     </div>
 
-    <div class="aloe-newsletter-wrapper container mx-auto">
+    <div class="aloe-newsletter-wrapper container mx-auto ">
         <div class="aloe-newsletter-left">
             <h3>My współpracujemy , my nie spamujemy</h3>
             <div class="aloe-newsletter-form">
