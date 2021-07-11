@@ -1,10 +1,10 @@
 <?php get_header() ?>
 
-<div clas="aloe-home">
+<div clas="aloe-home 2xl:container 2xl:mx-auto">
 
-    <div class="swiper-container">
+    <div class="swiper-container 2xl:container 2xl:mx-auto">
 
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper 2xl:container 2xl:mx-auto">
 
             <div class="swiper-slide">
                 <img src="<?php echo get_theme_file_uri() ?>/dev/aloes/src/images/slide-1.jpg" alt="slide-1">
@@ -20,6 +20,10 @@
 
         <div class="swiper-pagination" style="margin: 30px 0px; position: static"></div>
 
+    </div>
+
+    <div class="aloe-icons-img">
+        <img src="<?php echo get_theme_file_uri()?>/dev/aloes/src/images/dostawa-aloes-sklep-wysylka.png" alt="">
     </div>
 
     <div class="aloe-products-wrapper">
@@ -72,14 +76,16 @@
 
     </div>
 
-    <div class="aloe-newsletter-wrapper">
+    <div class="aloe-newsletter-wrapper container mx-auto">
         <div class="aloe-newsletter-left">
             <h3>My współpracujemy , my nie spamujemy</h3>
             <div class="aloe-newsletter-form">
                 <div><?php echo do_shortcode( '[mailerlite_form form_id=1]' ) ?></div>
             </div>
         </div>
-        <div class="aloe-newsletter-right"></div>
+        <div class="aloe-newsletter-right">
+            <img src="<?php echo get_theme_file_uri() ?>/dev/aloes/src/images/zapraszam.jpg" alt="">
+        </div>
     </div>
 
 </div>
