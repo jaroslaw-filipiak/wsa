@@ -84,7 +84,7 @@ if ( 'fullscreen' === oceanwp_mobile_menu_style() ) {
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
-    effect: "flip",
+    // effect: "flip",
     loop: true,
 
     // If we need pagination
