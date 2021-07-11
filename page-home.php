@@ -29,7 +29,7 @@
     </div>
 
     <div class="aloe-products-wrapper">
-        <?php echo do_shortcode('[products]') ?>
+        <?php echo do_shortcode('[products limit="21" orderby="date" order="DESC" columns="3"]') ?>
 
     </div>
 
