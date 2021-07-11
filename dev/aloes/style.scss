@@ -8,6 +8,30 @@
         font-size: 30px;
     
     }
+
+    ul.products {
+        @apply mx-auto container;
+        li.product {
+            h2 {
+                @apply normal-case;
+            }
+           .title {
+               @apply normal-case;
+           }
+        }
+    }
+
+    .woo-entry-inner {
+       .woo-entry-image {
+           a {
+               img {
+                   margin: 0 auto;
+                   width: 100%;
+               }
+           }
+       }
+       
+    }
 }
 
 .aloe-icons-img {
