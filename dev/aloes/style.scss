@@ -1,6 +1,6 @@
 
 .aloe-products-wrapper {
-    @apply border-8 mx-auto container;
+    @apply  mx-auto container;
 
 }
 
@@ -13,7 +13,7 @@
 }
 
 .aloe-post-content {
-    @apply p-5;
+    @apply p-5 pr-7 pb-11;
 }
 
 .aloe-post-date {
@@ -21,12 +21,48 @@
 }
 
 h1.aloe-post-title {
-    @apply mb-5 leading-6 font-semibold;
+    @apply mb-5 leading-6 font-semibold w-11/12 ;
     color: #1B1D26;
     font-size: 18px;
     line-height: 25px;
 }
 
 .aloe-read-more-btn {
-    @apply inline-block mt-4;
+    @apply inline-block mt-4 min-w-full;
+}
+
+.aloe-home {
+    .swiper-container {
+        @apply 2xl:container 2xl:mx-auto; 
+    }
+}
+
+.aloe-newsletter {
+
+    &-wrapper {
+
+        @apply flex flex-row 
+    }
+
+    &-left {
+        @apply w-11/12 flex flex-col items-start;
+    }
+
+    &-left, 
+    &-right {
+        
+        img {
+            @apply max-w-full h-auto
+        }
+    }
+
+    &-left {
+
+       h3 {
+           @apply font-bold uppercase pl-4;
+           color: #42BD98;
+           font-size: 22px;
+       
+       }
+    }
 }
