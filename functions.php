@@ -53,4 +53,5 @@ function prefix_quick_view_button() {
 }
 add_filter( 'ocean_woo_quick_view_button_html', 'prefix_quick_view_button' );
 
-	
+
+?>
