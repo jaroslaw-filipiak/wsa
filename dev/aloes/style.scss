@@ -121,3 +121,33 @@ h1.aloe-post-title {
        }
     }
 }
+
+.aloe-slide {
+   @apply relative hover:opacity-90; 
+   a {
+       @apply absolute left-0 top-0 z-10 w-full h-full block;
+       
+   }
+}
+
+.single-post:not(.elementor-page) .entry-content a:not(.wp-block-button__link):not(.wp-block-file__button), .page:not(.elementor-page):not(.woocommerce-page) .entry a:not(.wp-block-button__link):not(.wp-block-file__button) {
+   @apply no-underline;
+}
+
+.aloe-icons {
+    @apply container mx-auto flex items-center justify-between flex-col xl:flex-row;
+
+    .aloe-icon {
+        @apply flex items-center justify-start border  p-7;
+        
+        svg {
+            @apply w-48 h-auto;
+            padding-right: 30px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+    }
+}
