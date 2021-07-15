@@ -42,3 +42,15 @@ function new_excerpt_more($more) {
 }
 
 add_filter('excerpt_more', 'new_excerpt_more');
+
+
+function prefix_quick_view_button() {
+	global $product;
+ 
+	$button  = '<a href="#" id="product_id_' . $product->get_id() . '" class="owp-quick-view" data-product_id="' . $product->get_id() . '"><i class="icon-eye"></i>' . esc_html__( 'Podgląd', 'oceanwp' ) . '</a>';
+ 
+	echo $button;
+}
+add_filter( 'ocean_woo_quick_view_button_html', 'prefix_quick_view_button' );
+
+	
