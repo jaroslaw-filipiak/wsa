@@ -34,10 +34,3 @@ function vite_build() {
 }
 
 add_action( 'wp_enqueue_scripts', 'vite_build' );
-
-// Changing excerpt more
-function new_excerpt_more($more) {
-	global $post;
-	return '… <a class="aloe-read-more-btn" href="'. get_permalink($post->ID) . '">' . 'Czytaj dalej &raquo;' . '</a>';
-	}
-	add_filter('excerpt_more', 'new_excerpt_more');
