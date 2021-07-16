@@ -1,9 +1,4 @@
 
-body {
-    border: 22px solid red; 
-}
-
-
 #home-products {
     .woocommerce {
         ul.products {
@@ -23,7 +18,6 @@ body {
         }
     }
 }
-
 
 .aloe-products-wrapper {
     @apply mx-auto container;
