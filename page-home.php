@@ -224,8 +224,8 @@
         <figure class="exad-post-grid-thumbnail">
             <a href="<?php echo the_permalink() ?>" class="no-lightbox">
                 <img class="lozad" width="768" height="512" src="<?php echo $thumbnail ?> "
-                    srcset="$post_thumbnail_srcset" class="attachment-medium_large size-medium_large wp-post-image"
-                    alt="" loading="lazy">
+                    srcset="<?php echo $post_thumbnail_srcset ?>"
+                    class="attachment-medium_large size-medium_large wp-post-image" alt="" loading="lazy">
                 <div class="aloe-post-content">
                     <div class="aloe-post-date">Data: <?php echo get_the_date() ?></div>
                     <h1 class="aloe-post-title"><?php echo get_the_title() ?></h1>
