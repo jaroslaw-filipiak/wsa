@@ -10,7 +10,7 @@
 			// check if the repeater field has rows of data
 			if( have_rows('slajdy') ):
 			// loop through the rows of data
-			while ( have_rows('slajdy') ) : the_row(); // display a sub field value ?>
+			while ( have_rows('slajdy') ) : the_row();  ?>
 
             <?php $link = get_sub_field('link');  ?>
 

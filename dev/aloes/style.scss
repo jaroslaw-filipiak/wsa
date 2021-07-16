@@ -10,7 +10,7 @@
     }
 
     ul.products {
-        @apply mx-auto container;
+        @apply  pl-8 pr-8 mx-auto container;
         li.product {
             h2 {
                 @apply normal-case;
