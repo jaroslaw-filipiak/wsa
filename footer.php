@@ -108,8 +108,7 @@ const swiper = new Swiper('.swiper-container', {
 
 <?php } ?>
 
-
-<script src="<?php echo get_stylesheet_directory_uri() . '/dev/aloes/dist/index.min.css' ?>"></script>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/dev/aloes/dist/index.min.css' ?>">
 
 <?php wp_footer(); ?>
 </body>
