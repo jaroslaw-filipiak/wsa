@@ -29,11 +29,11 @@ function oceanwp_child_enqueue_parent_style() {
 }
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
-function vite_build() {
-	wp_enqueue_style('vitejs_build_styles', get_stylesheet_directory_uri() . '/dev/aloes/dist/index.min.css', array(), null);
-}
+// function vite_build() {
+// 	wp_enqueue_style('vitejs_build_styles', get_stylesheet_directory_uri() . '/dev/aloes/dist/index.min.css', array(), null);
+// }
 
-add_action( 'wp_enqueue_scripts', 'vite_build' );
+// add_action( 'wp_enqueue_scripts', 'vite_build' );
 
 
 
