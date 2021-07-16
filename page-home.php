@@ -21,7 +21,9 @@
 
             <div class="swiper-slide aloe-slide">
                 <a target="_blank" href="<?php echo $link ?>"></a>
-                <img class="lozad" src="<?php echo $img ?>" alt="slide-1" loading="lazy">
+                <img class="my_class"
+                    <?php awesome_acf_responsive_image(get_sub_field( 'slajd' ),'thumb-640','640px'); ?> alt="text" />
+
             </div>
 
             <?php
