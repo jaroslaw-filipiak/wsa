@@ -135,7 +135,7 @@ h1.aloe-post-title {
 }
 
 .aloe-icons {
-    @apply container mx-auto flex items-center justify-between flex-col xl:flex-row;
+    @apply container mx-auto flex items-center justify-between flex-col xl:flex-row mb-24;
 
     .aloe-icon {
         @apply flex items-center justify-start border  p-7;

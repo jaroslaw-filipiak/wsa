@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<div clas="aloe-home 2xl:container 2xl:mx-auto">
+<div clas="aloe-home 2xl:container 2xl:mx-auto" style="border: 22px solid red; ">
 
     <div class="swiper-container 2xl:container 2xl:mx-auto">
 
@@ -21,7 +21,7 @@
 
             <div class="swiper-slide aloe-slide">
                 <a target="_blank" href="<?php echo $link ?>"></a>
-                <img src="<?php echo $img ?>" alt="slide-1">
+                <img class="lozad" src="<?php echo $img ?>" alt="slide-1" loading="lazy">
             </div>
 
             <?php
@@ -223,9 +223,8 @@
 
         <figure class="exad-post-grid-thumbnail">
             <a href="<?php echo the_permalink() ?>" class="no-lightbox">
-                <img width="768" height="512" src="<?php echo $thumbnail ?>"
-                    class="attachment-medium_large size-medium_large wp-post-image" alt="" loading="lazy"
-                    srcset="<?php echo $post_thumbnail_srcset ?>">
+                <img class="lozad" width="768" height="512" src="<?php echo $thumbnail ?>"
+                    class="attachment-medium_large size-medium_large wp-post-image" alt="" loading="lazy">
                 <div class="aloe-post-content">
                     <div class="aloe-post-date">Data: <?php echo get_the_date() ?></div>
                     <h1 class="aloe-post-title"><?php echo get_the_title() ?></h1>
@@ -255,7 +254,7 @@
             </div>
         </div>
         <div class="aloe-newsletter-right">
-            <img src="<?php echo get_theme_file_uri() ?>/dev/aloes/src/images/zapraszam.jpg" alt="">
+            <!-- <img src="<?php echo get_theme_file_uri() ?>/dev/aloes/src/images/zapraszam.jpg" alt=""> -->
         </div>
     </div>
 
