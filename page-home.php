@@ -7,33 +7,29 @@
         <div class="swiper-wrapper 2xl:container 2xl:mx-auto">
 
             <?php
+			// check if the repeater field has rows of data
+			if( have_rows('slajdy') ):
+			// loop through the rows of data
+			while ( have_rows('slajdy') ) : the_row(); // display a sub field value ?>
 
-                    // Check rows exists.
-                    if( have_rows('slajdy') ):
-                    
-                        // Loop through rows.
-                        while( have_rows('slajdy') ) : the_row();
-                    
-                            // Load sub field value.
-                            $img = get_sub_field('slajd'); 
-                            $link = get_sub_field('link'); 
-            ?>
+            <?php $link = get_sub_field('link');  ?>
 
             <div class="swiper-slide aloe-slide">
                 <a target="_blank" href="<?php echo $link ?>"></a>
-                <img src="<?php echo $img ?>" alt="slide-1" loading="lazy">
+                <?php
+			        $image = get_sub_field('slajd', false);
+			        $size = 'hero-slide'; // (thumbnail, medium, large, full or custom size 1536-576 hero-slide)
+			        if( $image ) {
+			        echo wp_get_attachment_image( $image, $size );}
+			        ?>
             </div>
 
-            <?php
-                    
-                        // End loop.
-                        endwhile;
-                    
-                    // No value.
-                    else :
-                        // Do something...
-                    endif;
-            ?>
+
+            <?php endwhile;
+			else :
+			// no rows found
+			endif;?>
+
 
         </div>
 
