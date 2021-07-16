@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<div clas="aloe-home 2xl:container 2xl:mx-auto" style="border: 22px solid red; ">
+<div clas="aloe-home 2xl:container 2xl:mx-auto">
 
     <div class="swiper-container 2xl:container 2xl:mx-auto">
 
