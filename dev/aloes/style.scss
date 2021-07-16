@@ -1,4 +1,24 @@
 
+#home-products {
+    .woocommerce {
+        ul.products {
+            @apply  pl-8 pr-8 mx-auto container;
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+            margin: 0 auto !important;
+            li.product {
+                h2 {
+                    @apply normal-case;
+                }
+               .title {
+                   @apply normal-case;
+               }
+            }
+        }
+    }
+}
+
+
 .aloe-products-wrapper {
     @apply mx-auto container;
 
@@ -9,20 +29,7 @@
     
     }
 
-    ul.products {
-        @apply  pl-8 pr-8 mx-auto container;
-        padding-left: 30px !important;
-        padding-right: 30px !important;
-        margin: 0 auto !important;
-        li.product {
-            h2 {
-                @apply normal-case;
-            }
-           .title {
-               @apply normal-case;
-           }
-        }
-    }
+
 
     .woo-entry-inner {
        .woo-entry-image {
@@ -155,6 +162,3 @@ h1.aloe-post-title {
     }
 }
 
-#home-products ul {
-    @apply pl-8 pr-8 mx-auto;
-}
