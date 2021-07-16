@@ -1,13 +1,8 @@
 
-body {
-    border: 33px solid green ;
-}
-
 
 #home-products {
     .woocommerce {
         ul.products {
-            border: 2px solid red; 
             @apply  pl-8 pr-8 mx-auto container;
             padding-left: 30px !important;
             padding-right: 30px !important;
