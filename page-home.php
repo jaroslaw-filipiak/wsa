@@ -21,9 +21,7 @@
 
             <div class="swiper-slide aloe-slide">
                 <a target="_blank" href="<?php echo $link ?>"></a>
-                <img class="my_class"
-                    <?php awesome_acf_responsive_image(get_sub_field( 'slajd' ),'thumb-640','640px'); ?> alt="text" />
-
+                <img src="<?php echo $img ?>" alt="slide-1" loading="lazy">
             </div>
 
             <?php
@@ -218,15 +216,16 @@
             	while ( $query->have_posts() ) {
             		$query->the_post(); 
                     $post_thumbnail_id     = get_post_thumbnail_id(); 
-                    $post_thumbnail_srcset = wp_get_attachment_image_srcset( $post_thumbnail_id, 'medium' );
+                    $post_thumbnail_srcset = wp_get_attachment_image_srcset( $post_thumbnail_id, array( 400, 200 ) );
                     $thumbnail = get_the_post_thumbnail_url();
                     
         ?>
 
         <figure class="exad-post-grid-thumbnail">
             <a href="<?php echo the_permalink() ?>" class="no-lightbox">
-                <img class="lozad" width="768" height="512" src="<?php echo $thumbnail ?>"
-                    class="attachment-medium_large size-medium_large wp-post-image" alt="" loading="lazy">
+                <img class="lozad" width="768" height="512" src="<?php echo $thumbnail ?> "
+                    srcset="$post_thumbnail_srcset" class="attachment-medium_large size-medium_large wp-post-image"
+                    alt="" loading="lazy">
                 <div class="aloe-post-content">
                     <div class="aloe-post-date">Data: <?php echo get_the_date() ?></div>
                     <h1 class="aloe-post-title"><?php echo get_the_title() ?></h1>
