@@ -73,7 +73,7 @@
     <!-- End Facebook Pixel Code -->
 </head>
 
-<body style="border: 2px solid blue;" <?php body_class(); ?> <?php oceanwp_schema_markup( 'html' ); ?>>
+<body <?php body_class(); ?> <?php oceanwp_schema_markup( 'html' ); ?>>
 
     <?php wp_body_open(); ?>
 
