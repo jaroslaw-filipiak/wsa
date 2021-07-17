@@ -22,7 +22,7 @@
 
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script async src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
     <?php } ?>
@@ -73,7 +73,7 @@
     <!-- End Facebook Pixel Code -->
 </head>
 
-<body <?php body_class(); ?> <?php oceanwp_schema_markup( 'html' ); ?>>
+<body style="border: 2px solid blue;" <?php body_class(); ?> <?php oceanwp_schema_markup( 'html' ); ?>>
 
     <?php wp_body_open(); ?>
 
