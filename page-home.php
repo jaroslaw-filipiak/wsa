@@ -2,7 +2,7 @@
 
 <div clas="aloe-home 2xl:container 2xl:mx-auto">
 
-    <div class="swiper-container 2xl:container 2xl:mx-auto">
+    <div class="swiper-container container mx-auto">
 
         <div class="swiper-wrapper 2xl:container 2xl:mx-auto">
 
