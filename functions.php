@@ -38,3 +38,16 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 
 add_image_size( 'hero-slide', 1536, 576 ); 
+
+
+// quick view
+add_filter('ocean_woo_quick_view_button_html','custom_quick_view');
+function custom_quick_view($output)
+{
+ global $product;
+
+ $output  = '<a href="#" id="product_id_' . $product->get_id() . '" 
+       class="owp-quick-view" data-product_id="' . $product->get_id() . '"><i 
+       class="icon-eye"></i>' . esc_html__( 'Podejrzyj', 'oceanwp' ) . '</a>';  //Edit the $output as you want
+ return $output;
+}
