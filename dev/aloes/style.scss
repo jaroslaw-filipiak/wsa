@@ -105,13 +105,15 @@ h1.aloe-post-title {
 
 .aloe-newsletter {
 
+   
+
     &-wrapper {
 
-        @apply flex flex-row mt-44;
+        @apply flex flex-row mt-44 mb-24;
     }
 
     &-left {
-        @apply w-11/12 flex flex-col items-start;
+        @apply w-6/12 flex flex-col items-start;
     }
 
     &-left, 

@@ -251,7 +251,7 @@
             </div>
         </div>
         <div class="aloe-newsletter-right">
-            <!-- <img src="<?php echo get_theme_file_uri() ?>/dev/aloes/src/images/zapraszam.jpg" alt=""> -->
+            <img src="<?php echo get_field('zdjecie_po_prawej_stronie') ?>" alt="">
         </div>
     </div>
 
