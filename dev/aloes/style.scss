@@ -1,4 +1,12 @@
 
+header#site-header {
+    @apply container mx-auto;
+
+    .site-header-inner {
+        @apply container mx-auto;
+    }
+}
+
 
 #home-products {
     .woocommerce {
