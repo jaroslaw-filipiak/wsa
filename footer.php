@@ -92,10 +92,10 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         clickable: true
     },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
 
     // Navigation arrows
     // navigation: {
@@ -103,10 +103,7 @@ const swiper = new Swiper('.swiper-container', {
     //     prevEl: '.swiper-button-prev',
     // },
 
-    // And if we need scrollbar
-    // scrollbar: {
-    //     el: '.swiper-scrollbar',
-    // },
+
 });
 </script>
 
