@@ -92,10 +92,10 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         clickable: true
     },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 
     // Navigation arrows
     // navigation: {
