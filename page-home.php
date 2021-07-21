@@ -191,7 +191,7 @@
     </div>
 
 
-    <div id="home-products" class="aloe-products-wrapper 2xl:container 2xl:mx-auto">
+    <div id="home-products" class="aloe-products-wrapper container mx-auto">
         <h2>Produkty</h2>
         <div class="aloe-divider"><span></span></div>
         <?php echo do_shortcode('[products limit="21" orderby="date" order="DESC" columns="3"]') ?>
