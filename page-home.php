@@ -197,7 +197,7 @@
         <?php echo do_shortcode('[products limit="21" orderby="date" order="DESC" columns="3"]') ?>
     </div>
 
-    <div class="aloe-posts-wrapper 2xl:container 2xl:mx-auto">
+    <div class="aloe-posts-wrapper container mx-auto border">
         <?php 
 
             
