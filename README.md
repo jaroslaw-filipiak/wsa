@@ -16,3 +16,4 @@ wartośći co roku
 - Pod slajderem te kropki/bullety mają tło w kolorze motywu czyli kolejna duperela
 - Powiadomienie o cookies ma teraz buttony w kolorze motywu , można to podjerzeć otwierając stronę w nowym oknie inocgnito
 - Na stronie produktu po lewej stronie w sidebarze jest napis "Polecane produkty" , wcześniej było po eng
+- Strona kontaktowa nie ma już elementora ,jest oparta o natywne funkcje WP czyli są tam praktycznie dwa bloki gutenberga : formularz oraz kod html z mapką , na mapce jest usatwiony adres taki sam jak w stopce
