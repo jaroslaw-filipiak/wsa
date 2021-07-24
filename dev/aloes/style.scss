@@ -172,3 +172,13 @@ h1.aloe-post-title {
 #top-bar-wrap {
     border-color: #42bd98;
 }
+
+.pswp__ui.pswp__ui--hidden {
+    display: none;
+}
+
+.label-description {
+    p {
+            @apply ml-4;
+    }
+}
