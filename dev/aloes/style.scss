@@ -56,8 +56,14 @@ div#site-navigation-wrap {
     @apply flex flex-col xl:flex-row gap-3 grid-cols-3 pt-8 bg-white  mt-10 mb-10;
 
     figure {
-        @apply shadow-xl flex-wrap w-full xl:w-1/3;
+        @apply shadow-md flex-wrap w-full xl:w-1/3;
+
+        &:hover {
+            @apply shadow-xl;
+        }
     }
+
+   
 }
 
 .aloe-post-content {
@@ -191,10 +197,30 @@ h1.aloe-post-title {
     background: #42bd98 !important;
 }
 
-.copy {
-    background-color: #212121;
+#copy {
+    @apply pb-4;
+    background-color: #212121 !important;
     p {
-        color: #777777;
-        @apply text-center container text-xs;
+        color: #777777 !important;
+        @apply text-center container text-xl;
+    }
+}
+
+#footer-bottom #footer-bottom-menu {
+    margin-bottom: 0px !important;
+}
+
+.exad-post-grid-thumbnail {
+
+    a {
+        &:hover {
+            color:#1b1d26;
+        }
+    }
+    &:hover {
+
+        h1 , p , .aloe-post-date{
+            color:#1b1d26;
+        }
     }
 }
