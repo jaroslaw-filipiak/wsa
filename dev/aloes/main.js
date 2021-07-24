@@ -7,7 +7,7 @@ let init = () => {
 
     if(bar) {
 
-        bar.style.marginTop = '-60px'
+        bar.style.marginTop = '-40px'
     } else { }
 
 };
