@@ -112,6 +112,7 @@ const swiper = new Swiper('.swiper-container', {
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/dev/aloes/dist/index.min.css' ?>">
 
 <?php wp_footer(); ?>
+<div class="copy">Copyright 202111 - Wyhoduj Sobie Aloes</div>
 </body>
 
 </html>

@@ -190,3 +190,11 @@ h1.aloe-post-title {
 .cn-button.wp-default {
     background: #42bd98 !important;
 }
+
+.copy {
+    background-color: #212121;
+    p {
+        color: #777777;
+        @apply text-center container text-xs;
+    }
+}
