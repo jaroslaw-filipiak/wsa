@@ -4,6 +4,7 @@ module.exports = {
       rollupOptions: {
         output: {
           assetFileNames: "[name].min.[ext]",
+          entryFileNames: '[name].js',
         },
       },
     },
