@@ -1,0 +1,230 @@
+div#site-navigation-wrap {
+    margin-left: 15px;
+}
+
+#home-products {
+    .woocommerce {
+        ul.products {
+            @apply  pl-8 pr-8 mx-auto container;
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+            li.product {
+                h2 {
+                    @apply normal-case;
+                }
+               .title {
+                   @apply normal-case;
+               }
+            }
+        }
+    }
+}
+
+.aloe-products-wrapper {
+    @apply mx-auto container;
+
+    h2 {
+        @apply uppercase mx-auto text-center font-semibold;
+        color: #212121;
+        font-size: 30px;
+    
+    }
+
+
+
+    .woo-entry-inner {
+       .woo-entry-image {
+           a {
+               img {
+                   margin: 0 auto;
+                   width: 100%;
+               }
+           }
+       }
+       
+    }
+}
+
+.aloe-icons-img {
+    @apply mb-24 2xl:container 2xl:mx-auto;
+    img {
+        @apply max-w-full h-auto 2xl:container 2xl:mx-auto;
+    }
+}
+
+.aloe-posts-wrapper {
+    @apply flex flex-col xl:flex-row gap-3 grid-cols-3 pt-8 bg-white  mt-10 mb-10;
+
+    figure {
+        @apply shadow-md flex-wrap w-full xl:w-1/3;
+
+        &:hover {
+            @apply shadow-xl;
+        }
+    }
+
+   
+}
+
+.aloe-post-content {
+    @apply p-5 pr-7 pb-11;
+}
+
+.aloe-post-date {
+    @apply mb-5 ;
+}
+
+h1.aloe-post-title {
+    @apply mb-5 leading-6 font-semibold w-11/12 ;
+    color: #1B1D26;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.aloe-entry-title {
+    @apply  mx-auto text-center font-semibold uppercase ; 
+    font-size: 30px;
+    color:#212121;
+   
+}
+
+.aloe-read-more-btn {
+    @apply inline-block mt-4 min-w-full;
+}
+
+.aloe-home {
+    @apply 2xl:container 2xl:mx-auto; 
+    .swiper-container {
+        @apply 2xl:container 2xl:mx-auto; 
+    }
+}
+
+.aloe-divider {
+    @apply text-center mb-24;
+    span {
+        @apply mx-auto inline-block;
+        width: 8%;
+        height: 1px;
+        background-color: #212121;;
+    }
+}
+
+.aloe-newsletter {
+
+   
+
+    &-wrapper {
+
+        @apply flex flex-row mt-44 mb-24;
+    }
+
+    &-left {
+        @apply w-6/12 flex flex-col items-start;
+    }
+
+    &-left, 
+    &-right {
+        
+        img {
+            @apply max-w-full h-auto
+        }
+    }
+
+    &-left {
+
+       h3 {
+           @apply font-bold uppercase pl-4;
+           color: #42BD98;
+           font-size: 22px;
+       
+       }
+    }
+}
+
+.aloe-slide {
+   @apply relative hover:opacity-90; 
+   a {
+       @apply absolute left-0 top-0 z-10 w-full h-full block;
+       
+   }
+}
+
+.single-post:not(.elementor-page) .entry-content a:not(.wp-block-button__link):not(.wp-block-file__button), .page:not(.elementor-page):not(.woocommerce-page) .entry a:not(.wp-block-button__link):not(.wp-block-file__button) {
+   @apply no-underline;
+}
+
+.aloe-icons {
+    @apply container mx-auto flex items-center justify-between flex-col xl:flex-row mb-24;
+
+    .aloe-icon {
+        @apply flex items-center justify-start border  p-7;
+        
+        svg {
+            @apply w-48 h-auto;
+            padding-right: 30px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #42bd98; 
+}
+
+#top-bar-wrap {
+    border-color: #42bd98;
+}
+
+.pswp__ui.pswp__ui--hidden {
+    display: none;
+}
+
+#mlb2-3917668.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description {
+    
+  padding-left: 20px !important;
+}
+
+#mlb2-3917668.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::after, #mlb2-3917668.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::after, #mlb2-3917668.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-3917668.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-3917668.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::after {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.cn-button.wp-default {
+    background: #42bd98 !important;
+}
+
+#copy {
+    @apply pb-4;
+    background-color: #212121 !important;
+    p {
+        color: #777777 !important;
+        @apply text-center container text-xl;
+    }
+}
+
+#footer-bottom #footer-bottom-menu {
+    margin-bottom: 0px !important;
+}
+
+.exad-post-grid-thumbnail {
+
+    a {
+        &:hover {
+            color:#1b1d26;
+        }
+    }
+    &:hover {
+
+        h1 , p , .aloe-post-date{
+            color:#1b1d26;
+        }
+    }
+}
+
+.owp-floating-bar {
+    background: #3fc387 !important;
+}

@@ -1,5 +1,5 @@
 module.exports = {
-  // purge: ['./*.html', './src/purge/*.php'],
+  purge: ['./*.html', './src/purge/*.php' , './src/purge/*.scss'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

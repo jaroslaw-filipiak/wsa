@@ -29,15 +29,25 @@ function oceanwp_child_enqueue_parent_style() {
 }
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
-function vite_build() {
-	wp_enqueue_style('vitejs_build_styles', get_stylesheet_directory_uri() . '/dev/aloes/dist/index.min.css', array(), null);
+function vite_scripts() {
+wp_enqueue_script( 'from-vite', get_theme_file_uri() . '/dev/aloes/dist/index.js', array(), null, true );
 }
 
-add_action( 'wp_enqueue_scripts', 'vite_build' );
+add_action( 'wp_enqueue_scripts', 'vite_scripts' );
 
-// Changing excerpt more
-function new_excerpt_more($more) {
-	global $post;
-	return '… <a class="aloe-read-more-btn" href="'. get_permalink($post->ID) . '">' . 'Czytaj dalej &raquo;' . '</a>';
-	}
-	add_filter('excerpt_more', 'new_excerpt_more');
+
+
+add_image_size( 'hero-slide', 1536, 576 ); 
+
+
+// quick view
+add_filter('ocean_woo_quick_view_button_html','custom_quick_view');
+function custom_quick_view($output)
+{
+ global $product;
+
+ $output  = '<a href="#" id="product_id_' . $product->get_id() . '" 
+       class="owp-quick-view" data-product_id="' . $product->get_id() . '"><i 
+       class="icon-eye"></i>' . esc_html__( 'Podejrzyj', 'oceanwp' ) . '</a>';  //Edit the $output as you want
+ return $output;
+}

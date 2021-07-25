@@ -7,7 +7,10 @@
 
 ?>
 
+
 </main><!-- #main -->
+
+
 
 <?php do_action( 'ocean_after_main' ); ?>
 
@@ -23,6 +26,11 @@
 <?php } ?>
 
 <?php do_action( 'ocean_after_footer' ); ?>
+
+
+<div id="copy"">
+    <p class=" mx-auto">Copyright <?php echo date( 'Y',)?> - Wyhoduj Sobie Aloes</p>
+</div>
 
 </div><!-- #wrap -->
 
@@ -92,6 +100,10 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         clickable: true
     },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 
     // Navigation arrows
     // navigation: {
@@ -99,17 +111,19 @@ const swiper = new Swiper('.swiper-container', {
     //     prevEl: '.swiper-button-prev',
     // },
 
-    // And if we need scrollbar
-    // scrollbar: {
-    //     el: '.swiper-scrollbar',
-    // },
+
 });
 </script>
 
 <?php } ?>
 
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/dev/aloes/dist/index.min.css' ?>">
+
+
 
 <?php wp_footer(); ?>
+
+
 </body>
 
 </html>
