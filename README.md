@@ -16,4 +16,8 @@ wartośći co roku
 - Pod slajderem te kropki/bullety mają tło w kolorze motywu czyli kolejna duperela
 - Powiadomienie o cookies ma teraz buttony w kolorze motywu , można to podjerzeć otwierając stronę w nowym oknie inocgnito
 - Na stronie produktu po lewej stronie w sidebarze jest napis "Polecane produkty" , wcześniej było po eng
-- Strona kontaktowa nie ma już elementora ,jest oparta o natywne funkcje WP czyli są tam praktycznie dwa bloki gutenberga : formularz oraz kod html z mapką , na mapce jest usatwiony adres taki sam jak w stopce
+- Strona kontaktowa nie ma już elementora ,jest oparta o natywne funkcje WP czyli są tam praktycznie dwa bloki gutenberga : formularz oraz kod html z mapką , na mapce jest ustawiony adres taki sam jak w stopce
+- Usunąłem wtyczke SEOpress , zastąpiłem ją o wiele lepszą czyli rankmath [trzeba ją skonfigurować ale to nic trudnego , wystarczy przejść przez konfigurator składający się z kilku krokó]
+- Włączyłem również wtyczkę Checkout Fields Manager for WooCommerce
+- Aby poźniejsza edycja czy też w przyszłości dodawanie stron było bardziej przyjemne, zainstalowałem fajny builder (beaver builder) , który
+nie obciąża strony tak jak elementor , ma on podstawową funkcjonalnośc , która w zupełności wystarczy także nie jest on tak mocno przeładowany , za pomocą tego buildera jest zrobiona strona "fakty i mity które musisz poznać jeśli chcesz zadbać o swoje zdrowie"

@@ -51,3 +51,9 @@ function custom_quick_view($output)
        class="icon-eye"></i>' . esc_html__( 'Podejrzyj', 'oceanwp' ) . '</a>';  //Edit the $output as you want
  return $output;
 }
+
+function my_filter_plugin_updates( $value ) {
+    unset( $value->response['/inc/options/fields/acf.php'] );
+    return $value;
+}
+add_filter( 'site_transient_update_plugins', 'my_filter_plugin_updates' );
