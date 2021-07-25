@@ -52,8 +52,9 @@ function custom_quick_view($output)
  return $output;
 }
 
-function my_filter_plugin_updates( $value ) {
-    unset( $value->response['/inc/options/fields/acf.php'] );
+
+function filter_plugin_updates( $value ) {
+    unset( $value->response['advanced-custom-fields-pro/acf.php'] );
     return $value;
 }
-add_filter( 'site_transient_update_plugins', 'my_filter_plugin_updates' );
+add_filter( 'site_transient_update_plugins', 'filter_plugin_updates' );
