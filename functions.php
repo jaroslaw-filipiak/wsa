@@ -58,3 +58,4 @@ function filter_plugin_updates( $value ) {
     return $value;
 }
 add_filter( 'site_transient_update_plugins', 'filter_plugin_updates' );
+add_filter('acf/settings/show_admin', '__return_false');
