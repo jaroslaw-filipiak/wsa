@@ -124,8 +124,8 @@
 
             </div>
             <div class="aloe-icon--right">
-                <h2>Szybka dostawa</h2>
-                <h3>Wysyłamy nawet tego samego dnia</h3>
+                <h2>Darmowa wysyłka</h2>
+                <h3>Przy zamówieniu powyżej 160 zł</h3>
             </div>
 
         </div>
@@ -182,8 +182,8 @@
 
             </div>
             <div class="aloe-icon--right">
-                <h2>Szybka dostawa</h2>
-                <h3>Wysyłamy nawet tego samego dnia</h3>
+                <h2>100% zdrowia</h2>
+                <h3>Sprawdzone produkty</h3>
             </div>
 
         </div>
