@@ -1,3 +1,9 @@
+.container {
+    @apply mx-auto;
+    border: 2px dashed yellow !important;
+    margin: 0 auto;
+}
+
 div#site-navigation-wrap {
     margin-left: 15px;
 }
@@ -46,9 +52,9 @@ div#site-navigation-wrap {
 }
 
 .aloe-icons-img {
-    @apply mb-24 2xl:container 2xl:mx-auto;
+    @apply mb-24 container mx-auto;
     img {
-        @apply max-w-full h-auto 2xl:container 2xl:mx-auto;
+        @apply max-w-full h-auto container mx-auto;
     }
 }
 
@@ -93,9 +99,9 @@ h1.aloe-post-title {
 }
 
 .aloe-home {
-    @apply 2xl:container 2xl:mx-auto; 
+    @apply container mx-auto; 
     .swiper-container {
-        @apply 2xl:container 2xl:mx-auto; 
+        @apply container mx-auto; 
     }
 }
 

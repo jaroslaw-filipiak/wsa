@@ -1,10 +1,10 @@
 <?php get_header() ?>
 
-<div clas="aloe-home 2xl:container 2xl:mx-auto">
+<div clas="aloe-home container mx-auto">
 
     <div class="swiper-container mx-auto">
 
-        <div class="swiper-wrapper 2xl:container 2xl:mx-auto">
+        <div class="swiper-wrapper container mx-auto">
 
             <?php
 			// check if the repeater field has rows of data
@@ -33,7 +33,7 @@
 
         </div>
 
-        <div class="swiper-pagination 2xl:container 2xl:mx-auto" style="margin: 30px 0px; position: static"></div>
+        <div class="swiper-pagination container mx-auto" style="margin: 30px 0px; position: static"></div>
 
     </div>
 
