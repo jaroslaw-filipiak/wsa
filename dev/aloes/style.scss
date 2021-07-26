@@ -1,3 +1,6 @@
+
+
+
 div#site-navigation-wrap {
     margin-left: 15px;
 }
@@ -248,4 +251,10 @@ h1.aloe-post-title {
 
 .owp-floating-bar {
     background: #3fc387 !important;
+}
+
+.swiper-slide {
+    img {
+        @apply mx-auto;
+    }
 }

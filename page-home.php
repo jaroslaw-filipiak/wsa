@@ -1,10 +1,10 @@
 <?php get_header() ?>
 
-<div clas="aloe-home container mx-auto">
+<div clas="aloe-home container mx-auto" style="width: 100%;">
 
-    <div class="swiper-container mx-auto">
+    <div class="swiper-container mx-auto" style="width: 100%;">
 
-        <div class="swiper-wrapper mx-auto">
+        <div class="swiper-wrapper mx-auto" style="width: 100%;">
 
             <?php
 			// check if the repeater field has rows of data

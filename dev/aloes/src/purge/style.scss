@@ -1,8 +1,5 @@
-.container {
-    @apply mx-auto;
-    border: 2px dashed yellow !important;
-    margin: 0 auto;
-}
+
+
 
 div#site-navigation-wrap {
     margin-left: 15px;
@@ -121,30 +118,30 @@ h1.aloe-post-title {
 
     &-wrapper {
 
-        @apply flex flex-row mt-44 mb-24;
+        @apply flex flex-row flex-wrap mt-44 mb-24;
     }
 
     &-left {
-        @apply w-6/12 flex flex-col items-start;
+        @apply flex flex-col items-start ;
+
+        h3 {
+            @apply font-bold uppercase pl-4 text-center;
+            color: #42BD98;
+            font-size: 22px;
+        
+        }
     }
 
     &-left, 
     &-right {
+
+        @apply w-full xl:w-6/12 border;
         
         img {
             @apply max-w-full h-auto
         }
     }
 
-    &-left {
-
-       h3 {
-           @apply font-bold uppercase pl-4;
-           color: #42BD98;
-           font-size: 22px;
-       
-       }
-    }
 }
 
 .aloe-slide {
@@ -160,19 +157,40 @@ h1.aloe-post-title {
 }
 
 .aloe-icons {
-    @apply container mx-auto flex items-center justify-between flex-col xl:flex-row mb-24;
+    @apply container mx-auto flex items-center justify-between flex-row mb-24;
 
     .aloe-icon {
-        @apply flex items-center justify-start border  p-7;
+        @apply flex flex-col xl:flex-row items-center justify-center xl:justify-start  p-3 xl:p-7 border;
+        
         
         svg {
-            @apply w-48 h-auto ;
+            @apply xl:w-48 h-auto;
             padding-right: 30px;
+
+            // width: 70px;
+            @media (max-width: 930px) { 
+                width: 40px;
+                padding-right: 5px;
+                
+             }
         }
 
         h2 {
             margin-bottom: 15px;
             font-size: 26px;
+            @apply text-center;
+            @media (max-width: 1280px) { 
+                margin-bottom: 10px;
+                font-size: 16px;
+                margin-top: 10px;
+             }
+        }
+
+        h3 {
+            @media (max-width: 1280px) { 
+                font-size: 14px;
+                @apply text-center;
+             }
         }
     }
 }
@@ -233,4 +251,10 @@ h1.aloe-post-title {
 
 .owp-floating-bar {
     background: #3fc387 !important;
+}
+
+.swiper-slide {
+    img {
+        @apply mx-auto;
+    }
 }
