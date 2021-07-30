@@ -1,1 +1,1 @@
-window.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".owp-floating-bar"),n=document.querySelector("a.sidr-class-toggle-sidr-close");e&&(e.style.marginTop="-40px"),n&&(n.innerHTML="Zamknij menu")})());
+window.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".owp-floating-bar"),n=document.querySelector("a.sidr-class-toggle-sidr-close");e&&(e.style.marginTop="-40px"),n.innerHTML="Zamknij menu"})());

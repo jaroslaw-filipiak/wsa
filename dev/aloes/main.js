@@ -11,9 +11,9 @@ let init = () => {
         bar.style.marginTop = '-40px'
     } else { }
 
-    if(menuLabel) {
+   
         menuLabel.innerHTML = 'Zamknij menu';
-    }
+    
 
 };
 
