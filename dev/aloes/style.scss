@@ -158,22 +158,19 @@ h1.aloe-post-title {
 }
 
 .aloe-icons {
-    @apply container mx-auto flex items-center justify-between flex-row mb-24;
+    @apply container mx-auto flex items-start xl:items-center justify-between flex-row mb-24;
 
     .aloe-icon {
-        @apply flex flex-col xl:flex-row items-center justify-center xl:justify-start  p-3 xl:p-7 border;
+        @apply flex flex-col xl:flex-row items-center justify-center xl:justify-start  p-0  xl:p-7  w-4/12 xl:w-full;
         
         
         svg {
-            @apply xl:w-48 h-auto;
-            padding-right: 30px;
-
-            // width: 70px;
-            @media (max-width: 930px) { 
+            @apply xl:w-48 xl:pr-9 h-auto;
+           
+            @media (max-width: 1280px) { 
                 width: 40px;
-                padding-right: 5px;
-                
              }
+        
         }
 
         h2 {
