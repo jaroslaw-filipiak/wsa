@@ -1,1 +1,1 @@
-window.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".owp-floating-bar");e&&(e.style.marginTop="-40px")})());
+window.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".owp-floating-bar"),n=document.querySelector(".sidr-class-close-text");e&&(e.style.marginTop="-40px"),n&&(n.innerHTML="Zamknij menu")})());
