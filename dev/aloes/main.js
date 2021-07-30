@@ -4,7 +4,7 @@ import './src/index.css'
 let init = () => {
 
     const bar = document.querySelector('.owp-floating-bar');
-    const menuLabel = document.querySelector('.sidr-class-close-text')
+    const menuLabel = document.querySelector('a.sidr-class-toggle-sidr-close')
 
     if(bar) {
 
