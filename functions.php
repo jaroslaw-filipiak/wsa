@@ -59,3 +59,8 @@ function filter_plugin_updates( $value ) {
 }
 add_filter( 'site_transient_update_plugins', 'filter_plugin_updates' );
 add_filter('acf/settings/show_admin', '__return_false');
+
+function mytheme_add_woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+	}
+	add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
