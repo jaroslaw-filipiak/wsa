@@ -4,7 +4,7 @@
  *
  * @package OceanWP WordPress theme
  */
-
+global $woocommerce;
 ?>
 <!DOCTYPE html>
 <html class="<?php echo esc_attr( oceanwp_html_classes() ); ?>" <?php language_attributes(); ?>>
@@ -13,6 +13,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <?php wp_head(); ?>
 
@@ -72,6 +73,8 @@
             src="https://www.facebook.com/tr?id=495961798201209&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 </head>
+
+
 
 <body <?php body_class(); ?> <?php oceanwp_schema_markup( 'html' ); ?>>
 

@@ -68,7 +68,7 @@ function mytheme_add_woocommerce_support() {
 
 
 
-
-
 remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
 add_action('woocommerce_after_shop_loop', 'woocommerce_taxonomy_archive_description');
+
+add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );

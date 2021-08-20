@@ -1,4 +1,10 @@
-<?php get_header() ?>
+<?php get_header() ;
+
+
+
+?>
+
+
 
 <div clas="aloe-home container mx-auto" style="width: 100%;">
 

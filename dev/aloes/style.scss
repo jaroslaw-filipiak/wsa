@@ -1,5 +1,18 @@
 
+ #top-bar-wrap {
+@apply hidden;
+ }
+ 
+ #aloe-price-box {
+    @apply w-screen p-3 fixed left-0 z-40 text-white;
+    // opacity: 0;
+    z-index: 9999;
+    background-color: #42bd98;
 
+    .amount {
+        color: #fff !important;
+    }
+}
 
 div#site-navigation-wrap {
     margin-left: 15px;
@@ -7,7 +20,7 @@ div#site-navigation-wrap {
 
 #home-products {
     .woocommerce {
-        ul.products {
+        ul.products { 
             @apply  pl-8 pr-8 mx-auto container;
             padding-left: 30px !important;
             padding-right: 30px !important;
@@ -300,9 +313,10 @@ body.home {
             justify-content: center !important;
           
         }
-       
     
 
+     
+       
 
 
 // a.sidr-class-toggle-sidr-close {
